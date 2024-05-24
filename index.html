@@ -53,41 +53,48 @@
     .loaded .page-loader {
       display: none;
     }
+    @media (max-width: 1199.5px) {
+        .banner_wrapper .animate-img .aimg1 {
+            left: -12.125rem;
+            display: none !important;
+        }
+        .banner_wrapper .animate-img .aimg2 {
+            display: none !important;
+        }
+    }
   </style>
 </head>
 <!-- <body> -->
 
 <body class="loaded" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
-    <div class="page-loader">
-        <div class="loader-icon"></div>
-      </div>
+
     <!-- Navbar section --> 
-    <header class="header_wrapper">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                  <img decoding="async" src="images/top-banner-img/CITY.png" class="img-fluid" >
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+       <header class="header_wrapper">
+           <nav class="navbar navbar-expand-lg">
+               <div class="container">
+                   <a class="navbar-brand" href="#">
+                       <img decoding="async" src="images/top-banner-img/CITY.png" class="img-fluid" loading="lazy">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <!-- <span class="navbar-toggler-icon"></span> -->
                 <i class="fas-fa-stream navbar-toggler-icon"></i>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav  menu-navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
-                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#team">Team</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#Hospitals">Hospitals</a>
+                      <a class="nav-link" href="#Hospitals">Hospitals</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#testimonial">Testimonial</a>
@@ -96,8 +103,8 @@
                     <a class="nav-link" href="#blog">Blog</a>
                   </li>
                   <li class="nav-item mt-3 mt-lg-0">
-                    <a class="nav-link" href="#contact">Contact</a>
-                  </li>
+                      <a class="nav-link" href="#contact">Contact</a>
+                    </li>
                 </ul>
               </div>
             </div>
@@ -105,7 +112,7 @@
     </header>
 
     <!-- Navbar section exit -->
-
+    
     <!-- Banner section --> 
     <section id="home" class="home">
         <div class="banner_wrapper wrapper">
@@ -118,13 +125,13 @@
                         <a href="#" class="main-btn mt-4 fill-btn">Appointment</a>
                         <a href="#" class="main-btn mt-4 ms-3">Learn More</a>
                     </div>
-                    <div class="col-md-6 order-md-2 order-1 mb-md-0 mb-5">
-                        <div class="top-right-sec">
+                    <div class="col-md-6 order-md-2 order-1 mb-md-0 mb-5 mt-5 mt-md-0">
+                        <div class="top-right-sec mt-5 mt-md-0">
                             <div class="animate-img">
-                                <img decoding="async" class="aimg1" src="./images/top-banner-img/woman-brush.png">
-                                <img decoding="async" class="aimg2" src="./images/top-banner-img/doctor.png">
+                                <img decoding="async" class="aimg1 img-fluid" src="./images/top-banner-img/woman-brush.png" alt="Woman with brush" loading="lazy">
+                                <img decoding="async" class="aimg2 img-fluid" src="./images/top-banner-img/doctor.png" alt="Doctor" loading="lazy">
                             </div>
-                            <img decoding="async" class="img-fluid ms-xl-5" src="./images/top-banner-img/top-right-img-.png">
+                            <img decoding="async" class="img-fluid ms-xl-5" src="./images/top-banner-img/pngwing.com (1).png" alt="Top right image" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -136,7 +143,7 @@
                     <div class="col-md-4 col-sm-6 mb-4">
                         <div class="card text-center">
                             <div class="icon-box ">
-                                <img decoding="async" class="object-fit-scale" src="./images/top-banner-img/kit.png">
+                                <img decoding="async" class="object-fit-scale" src="./images/top-banner-img/kit.png" loading="lazy">
                             </div>
                             <div>
                                 <h4>Easy Appointment</h4>
@@ -147,7 +154,7 @@
                     <div class="col-md-4 col-sm-6 mb-4">
                         <div class="card text-center">
                             <div class="icon-box">
-                                <img decoding="async" src="./images/top-banner-img/Emergency-icon.png">
+                                <img decoding="async" src="./images/top-banner-img/Emergency-icon.png" loading="lazy">
                             </div>
                             <div>
                                 <h4>Emergency Service</h4>
@@ -158,7 +165,7 @@
                     <div class="col-md-4 col-sm-6 mb-4">
                         <div class="card text-center">
                             <div class="icon-box">
-                                <img decoding="async" src="./images/top-banner-img/7-Service-icon.png">
+                                <img decoding="async" src="./images/top-banner-img/7-Service-icon.png" loading="lazy">
                             </div>
                             <div>
                                 <h4>24/7 Service</h4>
@@ -170,22 +177,21 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Banner section exit -->
-
+    
     <!-- About section --> 
     <section id="about" class="about_wrapper wrapper">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 mb-mb-0 mb-5">
                     <div class="position-relative">
-                    
-                        <img decoding="async" src="./images/about/about.png" class="about-animate">
+                        <img decoding="async" src="./images/about/about.png" class="about-animate img-fluid " alt="About image" loading="lazy">
                     </div>
                 </div>
                 <div class="col-md-6 text-center text-md-start">
                     <h2>Welcome to a Family</h2>
-                    <p>At [Orthopaedic Surgery Center], we are dedicated to restoring mobility and enhancing lives through advanced orthopaedic care. we specialize in diagnosing and treating a wide range of orthopaedic conditions.</p>
+                    <p>At [Orthopaedic Surgery Center], we are dedicated to restoring mobility and enhancing lives through advanced orthopaedic care. We specialize in diagnosing and treating a wide range of orthopaedic conditions.</p>
                     <div class="mt-5 card">
                         <div class="about-clinic">
                             <h4>500+</h4>
@@ -212,7 +218,7 @@
     </section>
 
     <!-- About section exit -->
-
+    
     <!-- Services section --> 
     <section id="services" class="services_wrapper wrapper">
         <div class="container">
@@ -230,8 +236,8 @@
                         <div>
                             <h4>Joint Replacement Surgery</h4>
                             <p>We specialize in total and partial joint replacement procedures for the hip, knee, shoulder, and other joints affected by arthritis or injury. Our advanced surgical techniques and prosthetic options ensure long-term joint function.
-
-                                </p>
+                                
+                            </p>
                             <a href="#" class="main-btn mt-4">Read More</a>
                         </div>
                     </div>
@@ -299,7 +305,7 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Services section Exit -->
 
     <!-- Team section --> 
@@ -311,11 +317,11 @@
                 </div>
             </div>
             <div class="row">
-
+                
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card rounded-3">
                         <div class="team-img">
-                            <img decoding="async" src="./images/blog/1.jpg" class="img-fluid">
+                            <img decoding="async" src="./images/blog/1.jpg" class="img-fluid" loading="lazy">
                         </div>
                         <div class="team-info pt-4 text-center">
                             <h5>Darry Milin</h5>
@@ -327,13 +333,13 @@
                                 <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
                             </ul>
                         </div>
-
+                        
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card rounded-3">
                         <div class="team-img">
-                            <img decoding="async" src="./images/blog/2.jpg" class="img-fluid">
+                            <img decoding="async" src="./images/blog/2.jpg" class="img-fluid" loading="lazy">
                         </div>
                         <div class="team-info pt-4 text-center">
                             <h5>Salman Ahmed</h5>
@@ -345,13 +351,14 @@
                                 <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
                             </ul>
                         </div>
-
+                        
                     </div>
+                
                 </div>
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card rounded-3">
                         <div class="team-img">
-                            <img decoding="async" src="./images/blog/3.jpg" class="img-fluid">
+                            <img decoding="async" src="./images/blog/3.jpg" class="img-fluid" loading="lazy">
                         </div>
                         <div class="team-info pt-4 text-center">
                             <h5>Santa Binte</h5>
@@ -372,7 +379,7 @@
 
     <!-- Team Section Exit  -->  
     <section id="Hospitals" class="Hospitals_wrapper wrapper">
-        <div class="container">
+        <div class="container">     
             <div class="row">
                 <div class="col-sm-12 text-center mb-4">
                     <h3 class="text-black">Hospital Insights</h3>
@@ -445,7 +452,7 @@
             <div class="row">
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card p-0 border-0 rounded-0">
-                        <img decoding="async" src="./images/Hospitals/hos1.jpg">
+                        <img decoding="async" src="./images/Hospitals/hos1.jpg" loading="lazy">
                         <div class="blog-content">
                             <h5 class="text-white mb-4">Life Insurance with Benefits</h5>
                             <h6 class="text-white">By Admin - February 18, 2018</h6>
@@ -458,11 +465,11 @@
                 </div>
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card p-0 border-0 rounded-0">
-                        <img decoding="auto" src="./images/Hospitals/hos2.jpg">
+                        <img decoding="auto" src="./images/Hospitals/hos2.jpg" loading="lazy">
                         <div class="blog-content">
                             <h5 class="text-white mb-4">Surgery  Insurance with Benefits</h5>
                             <h6 class="text-white">By Admin - February 18, 2018</h6>
-                            <p class="mt-2 text-white"> Our multidisciplinary team is committed to delivering personalized, compassionate care tailored to your individual needs
+                            <p class="mt-2 text-white"> Our multidisciplinary team is committed to delivering personalized,care to individual needs.
                             </p>
                             <a href="#" class="main-btn mt-2">Read More</a>
 
@@ -471,17 +478,15 @@
                 </div>
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card p-0 border-0 rounded-0">
-                        <img decoding="async" src="./images/Hospitals/hos3.jpg">
+                        <img decoding="async" src="./images/Hospitals/hos3.jpg" loading="lazy">
                         <div class="blog-content">
-                            <h5 class="text-white mb-4">High Equippmenta</h5>
+                            <h5 class="text-white mb-4">High Equippments  with benifits </h5>
                             <h6 class="text-white">By Admin - February 18, 2018</h6>
-                            <p class="mt-2 text-white">We use high and well equipped instruments for surgery.
+                            <p class="mt-2 text-white">We use high and well equipped instruments for surgery.To get better results and help to get one better and a healthy knee.
                             </p>
                             <a href="#" class="main-btn mt-2">Read More</a>
-
-                        </div>
+                         </div>
                     </div> 
-                  
             </div>
         </div>
         </div>
@@ -555,7 +560,6 @@
         </div>
          </div>  
                 </section>
-
     <!-- Footer section exit -->
     <!-- Owl Cursor -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>

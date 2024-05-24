@@ -233,6 +233,7 @@ p{
     animation-duration: 2s;
     -webkit-animation-direction: alternate;
     animation-direction: alternate;
+    margin-left: 14rem;
 }
 .banner_wrapper .animate-img .aimg2{
     margin-left:5.5rem; 
@@ -248,6 +249,10 @@ p{
     animation-duration: 2.5s;
     -webkit-animation-direction: alternate;
     animation-direction: alternate;
+    margin-bottom: 20rem;
+    margin-left: 17rem;
+    margin-right: -8rem;
+}
 }
 
 .home .card:hover{
@@ -298,7 +303,7 @@ p{
     height:.0625rem;
 }
 .about_wrapper .about-animate{
-    position:absolute;
+    /* position:absolute; */
     left: -9.5rem;
     bottom: -633px;
     width: 58vw;
@@ -328,7 +333,6 @@ p{
 .services_wrapper .icon-box{
     margin-bottom:1.875rem;
 }
-
 
 /*7 Team Section */
 .team_wrapper .card{
@@ -393,7 +397,7 @@ p{
 /*10 blog */
 .blog_wrapper .blog-content{
     background-color:var(--bg-light-blue);
-    padding:2.5rem;
+    padding:3.5rem;
 }
 
 /* 11 footer */

@@ -156,4 +156,27 @@
 
 }
 
-   
+@media (max-width: 768px) {
+    .about_wrapper .container {
+        position: relative;
+    }
+    .about_wrapper .container .row {
+        flex-direction: column-reverse;
+    }
+    .about_wrapper .container .row .col-md-6.mb-mb-0.mb-5 {
+        order: 1;
+    }
+    .about_wrapper .container .row .col-md-6.text-center.text-md-start {
+        order: 2;
+    }
+    .about_wrapper .about-animate {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        width: 100%;
+        margin-bottom: 20px; /* Adjust as needed */
+    }
+    .about_wrapper .about-animate img {
+        width: 100%;
+    }
+}
