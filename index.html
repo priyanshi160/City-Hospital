@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Hospital</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"/>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <style>
+    .owl-carousel {
+      margin-bottom: 20px;
+    }
+    .owl-carousel img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .page-loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff; /* Change the background color as desired */
+      z-index: 9999; /* Ensure loader is on top of everything */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .loader-icon {
+      border: 8px solid #f3f3f3; /* Light gray border */
+      border-top: 8px solid #3498db; /* Blue border */
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 2s linear infinite; /* Spin animation */
+    }
+    /* Spin animation */
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    /* Hide loader when content is loaded */
+    .loaded .page-loader {
+      display: none;
+    }
+  </style>
+</head>
+<!-- <body> -->
+
+<body class="loaded" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+    <div class="page-loader">
+        <div class="loader-icon"></div>
+      </div>
+    <!-- Navbar section --> 
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                  <img decoding="async" src="images/logo.png" class="img-fluid" >
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fas-fa-stream navbar-toggler-icon"></i>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav  menu-navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#team">Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Hospitals">Hospitals</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#testimonial">Testimonial</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog</a>
+                  </li>
+                  <li class="nav-item mt-3 mt-lg-0">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- Navbar section exit -->
+
+    <!-- Banner section --> 
+    <section id="home" class="home">
+        <div class="banner_wrapper wrapper">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 order-md-1 order-2">
+                        <h3>Better Life Through</h3>
+                        <h2>"Revitalize Your Mobility: Expert Orthopaedic Surgery Services Await!"  </h2>
+                        <p>Our patient-centered approach ensures that each individual receives personalized care tailored to their unique needs and goals. From the moment you walk through our doors, you can expect compassionate support and expert guidance every step of the way.</p>
+                        <a href="#" class="main-btn mt-4 fill-btn">Appointment</a>
+                        <a href="#" class="main-btn mt-4 ms-3">Learn More</a>
+                    </div>
+                    <div class="col-md-6 order-md-2 order-1 mb-md-0 mb-5">
+                        <div class="top-right-sec">
+                            <div class="animate-img">
+                                <img decoding="async" class="aimg1" src="./images/top-banner-img/woman-brush.png">
+                                <img decoding="async" class="aimg2" src="./images/top-banner-img/doctor.png">
+                            </div>
+                            <img decoding="async" class="img-fluid ms-xl-5" src="./images/top-banner-img/top-right-img-.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper pb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <div class="icon-box ">
+                                <img decoding="async" class="object-fit-scale" src="./images/top-banner-img/kit.png">
+                            </div>
+                            <div>
+                                <h4>Easy Appointment</h4>
+                                <p>Lorem Ipsum is simply is very dummy text of the printings and type setting</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <div class="icon-box">
+                                <img decoding="async" src="./images/top-banner-img/Emergency-icon.png">
+                            </div>
+                            <div>
+                                <h4>Emergency Service</h4>
+                                <p>Lorem Ipsum is simply is very dummy text of the printings and type setting</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <div class="icon-box">
+                                <img decoding="async" src="./images/top-banner-img/7-Service-icon.png">
+                            </div>
+                            <div>
+                                <h4>24/7 Service</h4>
+                                <p>Lorem Ipsum is simply is very dummy text of the printings and type setting</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner section exit -->
+
+    <!-- About section --> 
+    <section id="about" class="about_wrapper wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-mb-0 mb-5">
+                    <div class="position-relative">
+                    
+                        <img decoding="async" src="./images/about/about.png" class="about-animate">
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-md-start">
+                    <h2>Welcome to a Family</h2>
+                    <p>At [Orthopaedic Surgery Center], we are dedicated to restoring mobility and enhancing lives through advanced orthopaedic care. we specialize in diagnosing and treating a wide range of orthopaedic conditions.</p>
+                    <div class="mt-5 card">
+                        <div class="about-clinic">
+                            <h4>500+</h4>
+                            <p>Happy Patients</p>
+                        </div>
+                        <div class="about-clinic">
+                            <h4>88+</h4>
+                            <p>Qualified Doctors</p>
+                        </div>
+                        <div class="about-clinic">
+                            <h4>25+</h4>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="about-clinic">
+                            <h4>55+</h4>
+                            <p>Dental Awards</p>
+                        </div>
+                        <span class="line-1"></span>
+                        <span class="line-2"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section exit -->
+
+    <!-- Services section --> 
+    <section id="services" class="services_wrapper wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-5">
+                    <h3>Our Services</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-hospital"></i>
+                        </div>
+                        <div>
+                            <h4>Joint Replacement Surgery</h4>
+                            <p>We specialize in total and partial joint replacement procedures for the hip, knee, shoulder, and other joints affected by arthritis or injury. Our advanced surgical techniques and prosthetic options ensure long-term joint function.
+
+                                </p>
+                            <a href="#" class="main-btn mt-4">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-hospital-user"></i>
+                        </div>
+                        <div>
+                            <h4>Sports Medicine</h4>
+                            <p>Whether you're a professional athlete or a weekend warrior, our sports medicine specialists are here to diagnose and treat sports-related injuries, including ligament tears, fractures, and overuse injuries.</p>
+                            <a href="#" class="main-btn mt-4">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-stethoscope"></i>
+                        </div>
+                        <div>
+                            <h4>Arthroscopic Surgery</h4>
+                            <p>Using minimally invasive arthroscopic techniques, we can diagnose and treat a variety of joint conditions, such as torn cartilage, ligament injuries, and joint inflammation.</p>
+                            <a href="#" class="main-btn mt-4">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-house-medical-circle-check"></i>
+                        </div>
+                        <div>
+                            <h4>Non-Surgical Treatments</h4>
+                            <p>Not all orthopaedic conditions require surgery. We offer a range of non-surgical treatment options, including physical therapy, injections, bracing, and orthotics, to manage pain and improve function without invasive procedures. </p>
+                            <a href="#" class="main-btn mt-4">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-square-h"></i>
+                        </div>
+                        <div>
+                            <h4>Orthopaedic Trauma Care</h4>
+                            <p>In cases of traumatic injuries, such as fractures, dislocations, and complex musculoskeletal injuries, our trauma specialists are equipped to provide prompt and comprehensive care</p>
+                            <a href="#" class="main-btn mt-4">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-bed-pulse"></i>
+                        </div>
+                        <div>
+                            <h4>Pediatric Orthopaedics</h4>
+                            <p> Our pediatric orthopaedic specialists are trained to address musculoskeletal conditions and injuries unique to children and adolescents, including congenital disorders, growth plate injuries, and sports-related injuries.</p>
+                            <a href="#" class="main-btn mt-4">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services section Exit -->
+
+    <!-- Team section --> 
+     <section id="team" class="team_wrapper wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-5">
+                    <h3 class="text-black">Our Surgeons</h3>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card rounded-3">
+                        <div class="team-img">
+                            <img decoding="async" src="./images/blog/1.jpg" class="img-fluid">
+                        </div>
+                        <div class="team-info pt-4 text-center">
+                            <h5>Darry Milin</h5>
+                            <p>Orthopedic surgeons</p>
+                            <ul class="social-network">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card rounded-3">
+                        <div class="team-img">
+                            <img decoding="async" src="./images/blog/2.jpg" class="img-fluid">
+                        </div>
+                        <div class="team-info pt-4 text-center">
+                            <h5>Salman Ahmed</h5>
+                            <p>Orthopedic surgeons</p>
+                            <ul class="social-network">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card rounded-3">
+                        <div class="team-img">
+                            <img decoding="async" src="./images/blog/3.jpg" class="img-fluid">
+                        </div>
+                        <div class="team-info pt-4 text-center">
+                            <h5>Santa Binte</h5>
+                            <p>Orthopedic surgeons</p>
+                            <ul class="social-network">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section Exit  -->  
+    <section id="Hospitals" class="Hospitals_wrapper wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <h3 class="text-black">Hospital Insights</h3>
+                </div>
+            </div>
+    <div class="owl-carousel owl-theme">
+        <div class="item"><img src="./images/Hospitals/hos1.jpg" alt="Image 1"></div>
+        <div class="item"><img src="./images/Hospitals/hos2.jpg" alt="Image 2"></div>
+        <div class="item"><img src="./images/Hospitals/hos3.jpg" alt="Image 3"></div>
+        <div class="item"><img src="./images/Hospitals/hos4.jpg" alt="Image 3"></div>
+        <div class="item"><img src="./images/Hospitals/hos5.jpg" alt="Image 3"></div>
+        <div class="item"><img src="./images/Hospitals/hos6.jpg" alt="Image 3"></div>
+
+    </div> 
+    </section> 
+    <!-- Testimonial section --> 
+    <section id="testimonial" class="testimonial_wrapper wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <h3 class="text-black">Testimonials</h3>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="card text-center">
+                        <!-- <img decoding="async" src="./images/" class="img-fluid"> -->
+                        <video controls class="w-100">
+                            <source src="images/coverr-old.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                        <h4 class="pt-4 mb-0">Aliceano Colby</h4>
+                        <p>CEO of Prime IT <br>Joint Replacement Surgery</p> 
+                    </div>
+                </div>
+                <div class="col-xl-9 col-md-8 col-sm-6 ps-md-4 pt-sm-0 pt-4">
+                    <h4>Awesome Work</h4>
+                    <p>“They really took my individual case to heart. Their team is very helpful. They all work
+                        together in an impressive way to make sure that my needs were met and I walked out pain
+                        free.”</p>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- Testimonial Section Exit -->
+
+    <!--Appointment section --> 
+    <section class="appointment_wrapper wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-8 col-10">
+                    <h3>Request your appointment and start your smile makeover!</h3>
+                    <a href="#" class="mt-5 main-btn fill-btn">Request Appointment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment section Exit -->
+    
+
+    <!-- Blog section --> 
+    <section id="blog" class="blog_wrapper wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-5">
+                    <h3 class="text-black">Latest Blog</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card p-0 border-0 rounded-0">
+                        <img decoding="async" src="./images/Hospitals/hos1.jpg">
+                        <div class="blog-content">
+                            <h5 class="text-white mb-4">Life Insurance with Benefits</h5>
+                            <h6 class="text-white">By Admin - February 18, 2018</h6>
+                            <p class="mt-2 text-white">Whether you're seeking treatment for chronic joint pain, a sports-related injury, or a complex orthopaedic condition.
+                            </p>
+                            <a href="#" class="main-btn mt-2">Read More</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card p-0 border-0 rounded-0">
+                        <img decoding="auto" src="./images/Hospitals/hos2.jpg">
+                        <div class="blog-content">
+                            <h5 class="text-white mb-4">Surgery  Insurance with Benefits</h5>
+                            <h6 class="text-white">By Admin - February 18, 2018</h6>
+                            <p class="mt-2 text-white"> Our multidisciplinary team is committed to delivering personalized, compassionate care tailored to your individual needs
+                            </p>
+                            <a href="#" class="main-btn mt-2">Read More</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card p-0 border-0 rounded-0">
+                        <img decoding="async" src="./images/Hospitals/hos3.jpg">
+                        <div class="blog-content">
+                            <h5 class="text-white mb-4">High Equippmenta</h5>
+                            <h6 class="text-white">By Admin - February 18, 2018</h6>
+                            <p class="mt-2 text-white">We use high and well equipped instruments for surgery.
+                            </p>
+                            <a href="#" class="main-btn mt-2">Read More</a>
+
+                        </div>
+                    </div> 
+                  
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Blog Section Exit  -->
+
+    <!-- Footer section --> 
+    <section id="contact" class="footer_wrapper wrapper">
+        <div class="container pb-3">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Hospital Location</h5>
+                    <p class="ps-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dignissim erat ut
+                        laoreet
+                        pharetra....</p>
+                    <div class="contact-info">
+                        <ul class="list-unstyled p-0">
+                            <li><a href="#"><i class="fa fa-home me-3"></i> No. 96, South City, London</a></li>
+                            <li><a href="#"><i class="fa fa-phone me-3"></i>+1 222 3333</a></li>
+                            <li><a href="#"><i class="fa fa-envelope me-3"></i>info@example.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>More Links</h5>
+                    <ul class="link-widget p-0">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Office</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Our Store</a></li>
+                        <li><a href="#">Guarantee</a></li>
+                        <li><a href="#">Buy Gift Card</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>More Links</h5>
+                    <ul class="link-widget p-0">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Office</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Our Store</a></li>
+                        <li><a href="#">Guarantee</a></li>
+                        <li><a href="#">Buy Gift Card</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Newsletter</h5>
+                    <div class="form-group mb-4">
+                        <input type="email" class="form-control bg-transparent" placeholder="Enter Your Email Here">
+                        <button type="submit" class="main-btn rounded-2 mt-3 border-white text-white">Subscribe</button>
+                    </div>
+                    <h5>Stay Connected</h5>
+                    <ul class="social-network d-flex align-items-center p-0 ">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="container-fluid copyright-section">
+            <p class="p-0">Copyright <a href="#">© CITY HOSPITAL</a> All Rights Reserved</p>
+        </div>
+         </div>  
+                </section>
+
+    <!-- Footer section exit -->
+    <!-- Owl Cursor -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Bootstrap 5 JS CDN Links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+    
+
+    <!-- Custom Js Link -->
+    <script src="main.js"></script>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+    jQuery(document).ready(function($) {
+        $(".owl-caroufsel").owlCarousel({
+        items : 3,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall: [979,2],
+        itemsTablet : [768,1],
+        lazyLoad : true,
+        navigation : false,
+        autoPlay : true,
+        autoHeight: true
+        }); 
+    });
+
+    jQuery(document).ready(function($) {
+        $("#owl-videos").owlCarousel({
+        items : 3,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall: [979,2],
+        itemsTablet : [768,1],
+        lazyLoad : true,
+        navigation : false,
+        autoPlay : true,
+        autoHeight: true
+        }); 
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        lazyLoad:true,
+      loop:true,
+      margin:10,
+      nav:true,
+      responsive:{
+        0:{
+          items:1
+        },
+        600:{
+          items:2
+        },
+        1000:{
+          items:3
+        }
+      }
+    });
+  });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      document.body.classList.add("loaded");
+    });
+  </script>
+    
+</body>
+</html>
